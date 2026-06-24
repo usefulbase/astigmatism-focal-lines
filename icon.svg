@@ -3,9 +3,8 @@
   <circle cx="290" cy="252" r="152" fill="#f8fbfc" stroke="#d8e3e6" stroke-width="10"/>
   <path d="M222 150 Q190 252 222 354 Q259 252 222 150Z" fill="#ccebf5" stroke="#477589" stroke-width="9"/>
   <path d="M416 130 Q461 252 416 374" fill="none" stroke="#657176" stroke-width="10" stroke-linecap="round"/>
-  <line x1="102" y1="252" x2="416" y2="252" stroke="#b9c5c9" stroke-width="6"/>
-  <g stroke="#9ba9ad" stroke-width="4"><path d="M118 245v14"/><path d="M148 245v14"/><path d="M178 245v14"/><path d="M208 245v14"/><path d="M238 245v14"/><path d="M268 245v14"/><path d="M298 245v14"/><path d="M328 245v14"/><path d="M358 245v14"/></g>
+  <g stroke="#9ba9ad" stroke-width="4"><path d="M282 282v14"/><path d="M306 282v14"/><path d="M330 282v14"/><path d="M354 282v14"/><path d="M378 282v14"/><path d="M402 282v14"/><path d="M426 282v14"/></g>
   <line x1="301" y1="223" x2="359" y2="281" stroke="#0072b2" stroke-width="20" stroke-linecap="round"/>
-  <line x1="380" y1="193" x2="380" y2="311" stroke="#009e73" stroke-width="20" stroke-linecap="round"/>
-  <circle cx="340" cy="252" r="18" fill="#fff" stroke="#20282d" stroke-width="8"/>
+  <line x1="400" y1="193" x2="400" y2="311" stroke="#009e73" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="370" cy="252" r="18" fill="#fff" stroke="#20282d" stroke-width="8"/>
 </svg>
