@@ -3,13 +3,13 @@
   "short_name": "焦線と網膜",
   "description": "乱視における焦線と網膜の関係を学ぶ教育支援ツール",
   "lang": "ja",
-  "start_url": "./",
+  "start_url": "./astigmatism-focal-lines-D.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f4f3ef",
   "theme_color": "#20282d",
   "icons": [
-    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    { "src": "./icon-v2-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-v2-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ]
 }

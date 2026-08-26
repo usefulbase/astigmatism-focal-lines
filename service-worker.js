@@ -1,12 +1,12 @@
-const CACHE = 'focal-lines-pwa-v6';
+const CACHE = 'focal-lines-pwa-v7';
 const APP_SHELL = [
   './',
   './index.html',
   './astigmatism-focal-lines-D.html',
   './manifest.webmanifest',
   './icon.svg',
-  './icon-192.png',
-  './icon-512.png'
+  './icon-v2-192.png',
+  './icon-v2-512.png'
 ];
 
 self.addEventListener('install', event => {
