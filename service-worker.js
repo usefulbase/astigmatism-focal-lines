@@ -1,4 +1,4 @@
-const CACHE = 'focal-lines-pwa-v16';
+const CACHE = 'focal-lines-pwa-v17';
 const APP_SHELL = [
   './',
   './index.html',
@@ -28,6 +28,10 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
+  if (event.request.cache === 'reload' || event.request.cache === 'no-store') {
+    event.respondWith(fetch(event.request));
+    return;
+  }
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request).then(response => {
