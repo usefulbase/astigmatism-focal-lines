@@ -3,7 +3,7 @@
   "short_name": "焦線と網膜",
   "description": "乱視における焦線と網膜の関係を学ぶ教育支援ツール",
   "lang": "ja",
-  "start_url": "./astigmatism-focal-lines-D.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f4f3ef",
