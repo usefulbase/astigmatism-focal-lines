@@ -4,7 +4,7 @@
   "description": "乱視における焦線と網膜の関係を学ぶ教育支援ツール",
   "lang": "ja",
   "id": "https://usefulbase.github.io/astigmatism-focal-lines/",
-  "start_url": "https://usefulbase.github.io/astigmatism-focal-lines/astigmatism-focal-lines-D.html",
+  "start_url": "https://usefulbase.github.io/astigmatism-focal-lines/",
   "scope": "https://usefulbase.github.io/astigmatism-focal-lines/",
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui"],
