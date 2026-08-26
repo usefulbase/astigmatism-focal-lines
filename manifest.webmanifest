@@ -4,7 +4,7 @@
   "description": "乱視における焦線と網膜の関係を学ぶ教育支援ツール",
   "lang": "ja",
   "id": "/astigmatism-focal-lines/",
-  "start_url": "./astigmatism-focal-lines-D.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui"],
