@@ -1,4 +1,4 @@
-const CACHE = 'focal-lines-pwa-v12';
+const CACHE = 'focal-lines-pwa-v13';
 const APP_SHELL = [
   './',
   './index.html',
