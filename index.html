@@ -8,25 +8,44 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="焦線と網膜">
-  <link rel="manifest" href="./manifest.webmanifest?v=4">
+  <link rel="manifest" href="./manifest.webmanifest?v=5">
   <link rel="icon" href="./icon-v2-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./icon-v2-192.png">
   <title>焦線と網膜</title>
   <style>
-    html,body{margin:0;width:100%;height:100%;background:#f4f3ef}
-    body{overflow:hidden}
-    iframe{display:block;width:100%;height:100%;border:0;background:#f4f3ef}
-    .fallback{position:fixed;inset:auto 12px 12px;z-index:2;text-align:center;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;font-size:12px}
-    .fallback a{color:#0072b2;font-weight:700}
+    body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f4f3ef;color:#24282b;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif}
+    main{padding:24px;text-align:center}
+    a{color:#0072b2;font-weight:700}
   </style>
 </head>
 <body>
-  <iframe src="./astigmatism-focal-lines-D.html" title="焦線と網膜"></iframe>
-  <p class="fallback"><a href="./astigmatism-focal-lines-D.html" target="_top">表示されない場合はこちら</a></p>
+  <main>
+    <p>焦線と網膜を開いています。</p>
+    <p><a href="./astigmatism-focal-lines-D.html">開かない場合はこちら</a></p>
+  </main>
   <script>
     if('serviceWorker' in navigator&&location.protocol!=='file:'){
       window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
     }
+    fetch('./astigmatism-focal-lines-D.html', {cache:'no-store'})
+      .then(response => {
+        if (!response.ok) throw new Error('failed');
+        return response.text();
+      })
+      .then(html => {
+        html = html
+          .replace('href="./manifest.webmanifest"', 'href="./manifest.webmanifest?v=5"')
+          .replace('href="./manifest.webmanifest?v=2"', 'href="./manifest.webmanifest?v=5"')
+          .replace('href="./manifest.webmanifest?v=3"', 'href="./manifest.webmanifest?v=5"')
+          .replace('href="./manifest.webmanifest?v=4"', 'href="./manifest.webmanifest?v=5"')
+          .replace(/href="\.\/icon-192\.png"/g, 'href="./icon-v2-192.png"');
+        document.open();
+        document.write(html);
+        document.close();
+      })
+      .catch(() => {
+        location.href = './astigmatism-focal-lines-D.html';
+      });
   </script>
 </body>
 </html>
