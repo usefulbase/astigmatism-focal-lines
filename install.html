@@ -8,9 +8,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="焦線と網膜">
-  <link rel="manifest" href="./manifest.webmanifest?v=9">
-  <link rel="icon" href="./icon-android-192-v4.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon" href="./icon-android-192-v4.png">
+  <link rel="manifest" href="./manifest.webmanifest?v=10">
+  <link rel="icon" href="./pwa-icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="./pwa-icon-192.png">
   <title>焦線と網膜</title>
   <style>
     body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f4f3ef;color:#24282b;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif}
@@ -34,10 +34,11 @@
       })
       .then(html => {
         html = html
-          .replace('href="./manifest.webmanifest"', 'href="./manifest.webmanifest?v=9"')
-          .replace(/href="\.\/manifest\.webmanifest\?v=\d+"/g, 'href="./manifest.webmanifest?v=9"')
-          .replace(/href="\.\/icon-v2-192\.png"/g, 'href="./icon-android-192-v4.png"')
-          .replace(/href="\.\/icon-192\.png"/g, 'href="./icon-android-192-v4.png"');
+          .replace('href="./manifest.webmanifest"', 'href="./manifest.webmanifest?v=10"')
+          .replace(/href="\.\/manifest\.webmanifest\?v=\d+"/g, 'href="./manifest.webmanifest?v=10"')
+          .replace(/href="\.\/icon-android-192-v4\.png"/g, 'href="./pwa-icon-192.png"')
+          .replace(/href="\.\/icon-v2-192\.png"/g, 'href="./pwa-icon-192.png"')
+          .replace(/href="\.\/icon-192\.png"/g, 'href="./pwa-icon-192.png"');
         document.open();
         document.write(html);
         document.close();
