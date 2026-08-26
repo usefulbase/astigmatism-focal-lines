@@ -1,6 +1,6 @@
 {
   "name": "焦線と網膜",
-  "short_name": "焦線",
+  "short_name": "焦線と網膜",
   "description": "乱視における焦線と網膜の関係を学ぶ教育支援ツール",
   "lang": "ja",
   "id": "https://usefulbase.github.io/astigmatism-focal-lines/",
@@ -11,7 +11,7 @@
   "background_color": "#f4f3ef",
   "theme_color": "#20282d",
   "icons": [
-    { "src": "https://usefulbase.github.io/astigmatism-focal-lines/icon-v2-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
-    { "src": "https://usefulbase.github.io/astigmatism-focal-lines/icon-v2-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    { "src": "https://usefulbase.github.io/astigmatism-focal-lines/icon-android-192-v4.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "https://usefulbase.github.io/astigmatism-focal-lines/icon-android-512-v4.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ]
 }
