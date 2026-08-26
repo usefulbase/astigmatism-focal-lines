@@ -1,7 +1,8 @@
-const CACHE = 'focal-lines-pwa-v10';
+const CACHE = 'focal-lines-pwa-v11';
 const APP_SHELL = [
   './',
   './index.html',
+  './install.html',
   './astigmatism-focal-lines-D.html',
   './manifest.webmanifest',
   './icon.svg',
