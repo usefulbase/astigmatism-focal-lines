@@ -26,8 +26,19 @@
     <a class="text" href="./install.html">インストール用ページを開く</a>
   </main>
   <script>
+    const standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+    if (standalone) location.replace('./astigmatism-focal-lines-D.html');
     if('serviceWorker' in navigator&&location.protocol!=='file:'){
-      window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
+      window.addEventListener('load',async()=>{
+        try{
+          await navigator.serviceWorker.register('./service-worker.js');
+          await navigator.serviceWorker.ready;
+          if(!navigator.serviceWorker.controller && !sessionStorage.getItem('pwa-controlled-once')){
+            sessionStorage.setItem('pwa-controlled-once','1');
+            location.reload();
+          }
+        }catch(e){}
+      });
     }
   </script>
 </body>
