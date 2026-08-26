@@ -1,19 +1,17 @@
 {
   "name": "焦線と網膜",
-  "short_name": "焦線と網膜",
+  "short_name": "焦線",
   "description": "乱視における焦線と網膜の関係を学ぶ教育支援ツール",
   "lang": "ja",
-  "id": "/astigmatism-focal-lines/",
-  "start_url": "./install.html",
-  "scope": "./",
+  "id": "https://usefulbase.github.io/astigmatism-focal-lines/",
+  "start_url": "https://usefulbase.github.io/astigmatism-focal-lines/astigmatism-focal-lines-D.html",
+  "scope": "https://usefulbase.github.io/astigmatism-focal-lines/",
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui"],
   "background_color": "#f4f3ef",
   "theme_color": "#20282d",
   "icons": [
-    { "src": "./icon-v2-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "./icon-v2-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "./icon-v2-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
-    { "src": "./icon-v2-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    { "src": "https://usefulbase.github.io/astigmatism-focal-lines/icon-v2-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "https://usefulbase.github.io/astigmatism-focal-lines/icon-v2-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ]
 }
