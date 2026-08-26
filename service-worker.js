@@ -1,5 +1,7 @@
-const CACHE = 'focal-lines-pwa-v5';
+const CACHE = 'focal-lines-pwa-v6';
 const APP_SHELL = [
+  './',
+  './index.html',
   './astigmatism-focal-lines-D.html',
   './manifest.webmanifest',
   './icon.svg',
@@ -27,7 +29,7 @@ self.addEventListener('fetch', event => {
         const copy = response.clone();
         caches.open(CACHE).then(cache => cache.put(event.request, copy));
         return response;
-      }).catch(() => caches.match('./astigmatism-focal-lines-D.html'))
+      }).catch(() => caches.match('./index.html').then(match => match || caches.match('./astigmatism-focal-lines-D.html')))
     );
     return;
   }
@@ -38,6 +40,6 @@ self.addEventListener('fetch', event => {
         caches.open(CACHE).then(cache => cache.put(event.request, copy));
       }
       return response;
-    }).catch(() => caches.match('./astigmatism-focal-lines-D.html')))
+    }).catch(() => caches.match('./index.html').then(match => match || caches.match('./astigmatism-focal-lines-D.html'))))
   );
 });
