@@ -6,24 +6,29 @@
   <meta name="theme-color" content="#20282d">
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="manifest" href="./manifest.webmanifest?v=9">
-  <meta http-equiv="refresh" content="0; url=./astigmatism-focal-lines-D.html">
   <link rel="icon" href="./icon-android-192-v4.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./icon-android-192-v4.png">
   <title>焦線と網膜</title>
   <style>
     body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f4f3ef;color:#24282b;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif}
-    main{padding:24px;text-align:center}
-    a{color:#0072b2;font-weight:700}
+    main{width:min(92vw,520px);padding:28px;text-align:center;background:#fff;border:1px solid #dcdcd6;border-radius:18px;box-shadow:0 10px 30px #20282d14}
+    h1{margin:0 0 10px;font-size:26px}
+    p{line-height:1.7;color:#566268}
+    a.button{display:inline-flex;align-items:center;justify-content:center;margin-top:12px;min-height:48px;padding:0 24px;border-radius:999px;background:#20282d;color:#fff;text-decoration:none;font-weight:700}
+    a.text{display:block;margin-top:18px;color:#0072b2;font-weight:700}
   </style>
 </head>
 <body>
   <main>
-    <p>焦線と網膜を開いています。</p>
-    <p><a href="./astigmatism-focal-lines-D.html">開かない場合はこちら</a></p>
-    <p><a href="./install.html">アプリとして追加を試す</a></p>
+    <h1>焦線と網膜</h1>
+    <p>乱視における焦線と網膜の関係を確認する教育支援ツールです。</p>
+    <a class="button" href="./astigmatism-focal-lines-D.html">アプリを開く</a>
+    <a class="text" href="./install.html">インストール用ページを開く</a>
   </main>
   <script>
-    location.replace('./astigmatism-focal-lines-D.html');
+    if('serviceWorker' in navigator&&location.protocol!=='file:'){
+      window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
+    }
   </script>
 </body>
 </html>
