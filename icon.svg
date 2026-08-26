@@ -1,10 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="104" fill="#20282d"/>
-  <circle cx="290" cy="252" r="152" fill="#f8fbfc" stroke="#d8e3e6" stroke-width="10"/>
-  <path d="M222 150 Q190 252 222 354 Q259 252 222 150Z" fill="#ccebf5" stroke="#477589" stroke-width="9"/>
-  <path d="M416 130 Q461 252 416 374" fill="none" stroke="#657176" stroke-width="10" stroke-linecap="round"/>
-  <g stroke="#9ba9ad" stroke-width="4"><path d="M282 282v14"/><path d="M306 282v14"/><path d="M330 282v14"/><path d="M354 282v14"/><path d="M378 282v14"/><path d="M402 282v14"/><path d="M426 282v14"/></g>
-  <line x1="301" y1="223" x2="359" y2="281" stroke="#0072b2" stroke-width="20" stroke-linecap="round"/>
-  <line x1="400" y1="193" x2="400" y2="311" stroke="#009e73" stroke-width="20" stroke-linecap="round"/>
-  <circle cx="370" cy="252" r="18" fill="#fff" stroke="#20282d" stroke-width="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="焦線と網膜のアイコン">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="42" x2="448" y2="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#102734"/>
+      <stop offset=".55" stop-color="#203941"/>
+      <stop offset="1" stop-color="#11191f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="55%" cy="42%" r="60%">
+      <stop offset="0" stop-color="#f3fcff" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#f3fcff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lens" cx="45%" cy="42%" r="62%">
+      <stop offset="0" stop-color="#effcff" stop-opacity=".74"/>
+      <stop offset=".55" stop-color="#9ac6d0" stop-opacity=".54"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".18"/>
+    </radialGradient>
+  </defs>
+  <rect x="24" y="24" width="464" height="464" rx="104" fill="url(#bg)"/>
+  <rect x="24" y="24" width="464" height="464" rx="104" fill="url(#glow)"/>
+  <circle cx="256" cy="256" r="104" fill="url(#lens)" stroke="#effcff" stroke-width="10"/>
+  <circle cx="256" cy="256" r="75" fill="none" stroke="#86bdca" stroke-width="4" opacity=".65"/>
+  <path d="M78 212H218" fill="none" stroke="#f5c453" stroke-width="13" stroke-linecap="round"/>
+  <path d="M78 300H218" fill="none" stroke="#f5c453" stroke-width="13" stroke-linecap="round"/>
+  <path d="M198 193L232 212L198 231Z" fill="#f5c453"/>
+  <path d="M198 281L232 300L198 319Z" fill="#f5c453"/>
+  <path d="M294 212L420 256" fill="none" stroke="#f5c453" stroke-width="14" stroke-linecap="round"/>
+  <path d="M294 300L420 256" fill="none" stroke="#f5c453" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="428" cy="256" r="25" fill="#f7fbfb" stroke="#17242a" stroke-width="11"/>
 </svg>
