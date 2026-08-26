@@ -6,7 +6,7 @@
 
 ## 公開ページ
 
-https://usefulbase.github.io/astigmatism-focal-lines/astigmatism-focal-lines-D.html
+https://usefulbase.github.io/astigmatism-focal-lines/
 
 ## 主な機能
 
@@ -68,6 +68,7 @@ https://usefulbase.github.io/astigmatism-focal-lines/astigmatism-focal-lines-D.h
 
 | ファイル | 内容 |
 | --- | --- |
+| `index.html` | 短い公開URL用の入口ページ |
 | `astigmatism-focal-lines-D.html` | アプリ本体 |
 | `manifest.webmanifest` | PWAのアプリ情報 |
 | `service-worker.js` | オフライン起動用の設定 |
