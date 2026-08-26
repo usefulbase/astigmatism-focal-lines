@@ -8,10 +8,13 @@
   "scope": "https://usefulbase.github.io/astigmatism-focal-lines/",
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui"],
-  "background_color": "#f4f3ef",
+  "background_color": "#20282d",
   "theme_color": "#20282d",
   "icons": [
-    { "src": "https://usefulbase.github.io/astigmatism-focal-lines/icon-android-192-v4.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
-    { "src": "https://usefulbase.github.io/astigmatism-focal-lines/icon-android-512-v4.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
-  ]
+    { "src": "https://usefulbase.github.io/astigmatism-focal-lines/pwa-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "https://usefulbase.github.io/astigmatism-focal-lines/pwa-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "https://usefulbase.github.io/astigmatism-focal-lines/pwa-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "https://usefulbase.github.io/astigmatism-focal-lines/pwa-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "prefer_related_applications": false
 }
