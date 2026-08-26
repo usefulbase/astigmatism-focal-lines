@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="焦線と網膜">
-  <link rel="manifest" href="./manifest.webmanifest?v=16">
+  <link rel="manifest" href="./manifest.webmanifest?v=17">
   <link rel="icon" href="./pwa-icon-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./pwa-icon-192.png">
   <title>焦線と網膜</title>
@@ -27,18 +27,19 @@
     if('serviceWorker' in navigator&&location.protocol!=='file:'){
       window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
     }
-    fetch('./astigmatism-focal-lines-D.html', {cache:'no-store'})
+    fetch('./astigmatism-focal-lines-D.html', {cache:'reload'})
       .then(response => {
         if (!response.ok) throw new Error('failed');
         return response.text();
       })
       .then(html => {
         html = html
-          .replace('href="./manifest.webmanifest"', 'href="./manifest.webmanifest?v=16"')
-          .replace(/href="\.\/manifest\.webmanifest\?v=\d+"/g, 'href="./manifest.webmanifest?v=16"')
+          .replace('href="./manifest.webmanifest"', 'href="./manifest.webmanifest?v=17"')
+          .replace(/href="\.\/manifest\.webmanifest\?v=\d+"/g, 'href="./manifest.webmanifest?v=17"')
           .replace(/href="\.\/icon-v2-192\.png"/g, 'href="./pwa-icon-192.png"')
           .replace(/href="\.\/icon-192\.png"/g, 'href="./pwa-icon-192.png"')
-          .replace(/href="\.\/icon-android-192-v4\.png"/g, 'href="./pwa-icon-192.png"');
+          .replace(/href="\.\/icon-android-192-v4\.png"/g, 'href="./pwa-icon-192.png"')
+          .replace('<title>乱視の焦線</title>', '<title>焦線と網膜</title>');
         document.open();
         document.write(html);
         document.close();
