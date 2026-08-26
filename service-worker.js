@@ -1,4 +1,4 @@
-const CACHE = 'focal-lines-pwa-v13';
+const CACHE = 'focal-lines-pwa-v14';
 const APP_SHELL = [
   './',
   './index.html',
@@ -7,7 +7,9 @@ const APP_SHELL = [
   './manifest.webmanifest',
   './icon.svg',
   './icon-v2-192.png',
-  './icon-v2-512.png'
+  './icon-v2-512.png',
+  './icon-android-192-v4.png',
+  './icon-android-512-v4.png'
 ];
 
 self.addEventListener('install', event => {
